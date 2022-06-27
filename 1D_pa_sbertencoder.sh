@@ -10,6 +10,7 @@
 cd $SLURM_SUBMIT_DIR 
 
 pwd; hostname; date
+source ~/.bashrc
 conda activate scidocs
 python 1D_embed_sbert.py
 
