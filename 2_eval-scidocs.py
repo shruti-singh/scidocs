@@ -5,8 +5,8 @@ from scidocs.paths import DataPaths
 data_paths = DataPaths()
 
 # specter_pretrained_pt, specter_pretrained_hf, oag_init_silm, oagbert_indexfixedfrom_oag, oag_fromnewpushonthudmnlprepo
-# model_name could be [specter, shf, oag, oagbert, newoag]
-model_name = 'oagbert'
+# model_name could be [specter, shf, oag, oagbert, newoag, scibert, sbert]
+model_name = 'scibert'
 
 # point to the included embeddings jsonl
 classification_embeddings_path = 'data/trained_embs/{}-embeddings/cls.jsonl'.format(model_name)
