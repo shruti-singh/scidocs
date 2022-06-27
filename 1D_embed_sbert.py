@@ -192,4 +192,4 @@ if __name__ == "__main__":
             out_file_name = out_file_name.replace("paper_metadata_", "")
             out_file_name = out_file_name.replace(".json", "")
             
-            sd = de.encode_batch_wise_using_scibert(data_dict, './data/trained_embs/sbert-embeddings/{}.jsonl'.format(out_file_name))
+            sd = de.encode_batch_wise_using_sbert(data_dict, './data/trained_embs/sbert-embeddings/{}.jsonl'.format(out_file_name))
