@@ -24,4 +24,5 @@ scidocs_metrics = get_scidocs_metrics(
     cuda_device=-1  # the recomm task can use a GPU if this is set to 0, 1, etc
 )
 
+print("Scidocs result for model: {}".format(model_name))
 print(scidocs_metrics)
