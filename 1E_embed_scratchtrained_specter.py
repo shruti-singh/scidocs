@@ -1,5 +1,5 @@
 # use sciemb conda env: conda activate sciemb
-
+import sys
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import SentenceTransformer
 import nltk
@@ -302,12 +302,14 @@ class DataEncoder:
         return document_emb_dict
 
 if __name__ == "__main__":
+
+    file_idx = sys.argv[1]
+
     de = DataEncoder(model='specter_scratch')
 
     all_task_files = glob.glob("./data/*.json")
 
-    # Parallelize on multiple cores.
-    for f in [all_task_files[0]]:
+    for f in [all_task_files[file_idx]]:
         print("Processing file: {}".format(f))
         with open(f, 'r') as fin:
             data_dict = json.load(fin)

@@ -12,6 +12,6 @@ cd $SLURM_SUBMIT_DIR
 pwd; hostname; date
 source ~/.bashrc
 conda activate scidocs
-python 1E_embed_scratchtrained_specter.py
+python 1E_embed_scratchtrained_specter.py $1
 
 date
