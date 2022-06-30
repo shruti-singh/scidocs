@@ -244,7 +244,7 @@ class DataEncoder:
         doc_batch_list = []
         batch_ids = []
 
-        with open(to_save_loc, 'w') as outfile:
+        with open(to_save_loc, 'a') as outfile:
             for _, entry in enumerate(document_emb_dict):
                 try:
                     outfile.write(json.dumps({"paper_id": entry, "title": (document_dict[entry].get('title') or ''), "embedding": document_emb_dict[entry]}) + '\n')
