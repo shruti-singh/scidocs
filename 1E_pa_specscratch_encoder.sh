@@ -4,8 +4,8 @@
 #SBATCH --ntasks-per-node=48
 #SBATCH --time=23:59:00
 #SBATCH --job-name=specsc
-#SBATCH --error=./pa_logs/specsc_$1_%j.err
-#SBATCH --output=./pa_logs/specsc_$1_%j.log
+#SBATCH --error "./pa_logs/specsc_"$1"_%j.err"
+#SBATCH --output "./pa_logs/specsc_"$1"_%j.log"
 #SBATCH --partition=small
 cd $SLURM_SUBMIT_DIR 
 
