@@ -303,7 +303,7 @@ class DataEncoder:
 
 if __name__ == "__main__":
 
-    file_idx = sys.argv[1]
+    file_idx = int(sys.argv[1])
 
     de = DataEncoder(model='specter_scratch')
 
