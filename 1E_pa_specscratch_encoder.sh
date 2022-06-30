@@ -1,4 +1,6 @@
 #!/bin/sh
+sbatch <<EOT
+#!/bin/bash
 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=48
